@@ -1,0 +1,26 @@
+how to run
+
+kubectl apply -f geoserver.yaml
+kubectl apply -f celery.yaml
+kubectl apply -f django.yaml
+kubectl apply -f postgresql.yaml
+kubectl apply -f rabbitmq.yaml
+kubectl apply -f nginx.yaml
+
+
+kubectl get pods
+
+kubectl apply -f geoserver-service.yaml
+kubectl apply -f celery-service.yaml
+kubectl apply -f django-service.yaml
+kubectl apply -f postgresql-service.yaml
+kubectl apply -f rabbitmq-service.yaml
+kubectl apply -f nginx-service.yaml
+
+
+kubectl apply -f ingress.yaml
+
+
+minikube service nginx
+
+minikube tunnel 
